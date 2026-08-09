@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Generator</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+            padding: 40px;
+        }
+
+        .box {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        #password {
+            width: 95%;
+        }
+
+        #bar {
+            height: 10px;
+            background: black;
+            width: 0%;
+        }
+
+        .meter {
+            background: #ddd;
+            margin: 15px 0;
+        }
+
+        .history-item {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h1>Password Generator</h1>
+
+    <input id="password" type="text">
+
+    <br>
+
+    <label>
+        Length:
+        <span id="lengthValue">16</span>
+    </label>
+
+    <input
+        id="length"
+        type="range"
+        min="8"
+        max="40"
+        value="16"
+    >
+
+    <br>
+
+    <label>
+        <input id="upper" type="checkbox" checked>
+        Uppercase
+    </label>
+
+    <br>
+
+    <label>
+        <input id="lower" type="checkbox" checked>
+        Lowercase
+    </label>
+
+    <br>
+
+    <label>
+        <input id="numbers" type="checkbox" checked>
+        Numbers
+    </label>
+
+    <br>
+
+    <label>
+        <input id="symbols" type="checkbox" checked>
+        Symbols
+    </label>
+
+    <br><br>
+
+    <button id="generate">
+        Generate
+    </button>
+
+    <button id="copy">
+        Copy
+    </button>
+
+    <button id="clear">
+        Clear History
+    </button>
+
+    <p id="result">Enter a password</p>
+
+    <div class="meter">
+        <div id="bar"></div>
+    </div>
+
+    <h3>History</h3>
+
+    <div id="history"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
