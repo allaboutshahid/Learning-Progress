@@ -14,5 +14,4 @@ window.addEventListener(
   "scroll",
   throttle(() => console.log("Scroll event:", Date.now()), 300)
 );
-
 module.exports = throttle;
