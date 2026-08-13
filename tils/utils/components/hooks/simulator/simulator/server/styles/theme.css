@@ -1,0 +1,9 @@
+:root {
+  --color-navy-900: #0a0f1c;
+  --color-navy-700: #12213a;
+  --color-amber-500: #f59e0b;
+  --color-amber-300: #fcd34d;
+  --color-danger: #dc2626;
+  --color-safe: #22c55e;
+  --font-primary: "Inter", sans-serif;
+}
